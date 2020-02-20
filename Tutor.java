@@ -42,16 +42,12 @@ public class Tutor {
     public void setHours(double h[][])
     {
      
-        
-        
         Scanner input = new Scanner(System.in);
         LocalDateTime myTime = LocalDateTime.now();     // Create a date object
         DateTimeFormatter formatTime = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
         
         String finalTime = myTime.format(formatTime);
         System.out.println(finalTime);
-        
-        
         
         
         for(int row = 0; row < h.length; row++)
@@ -76,12 +72,12 @@ public class Tutor {
                 }    
                 else if(col == 3)                 //thursday
                 {
-                   System.out.println("Enter Hours for Wednesday: ");
+                   System.out.println("Enter Hours for Thursday: ");
                    h[row][col] = input.nextDouble();
                 }    
                 else if(col == 4)                 //friday
                 {
-                    System.out.println("Enter Hours for Wednesday: ");
+                    System.out.println("Enter Hours for Friday: ");
                     h[row][col] = input.nextDouble();
                 }    
                 else
@@ -95,8 +91,24 @@ public class Tutor {
         
     }        
     
-    public void getHours()
+    public void getHours(String d[], double h[][])
     {
+        for(int length = 0; length < 5; length++)
+        {
+            System.out.print(d[length] + " ");
+        }    
+        
+        System.out.println();
+        
+        for(int row = 0; row < h.length; row++)
+        {
+        
+            for(int col = 0; col < h[0].length; col++)
+            {
+                System.out.print(h[row][col] + " ");  
+            }    
+        
+        }
         
     }        
     
