@@ -1,0 +1,61 @@
+    <html>
+    <head>
+    <title>Login</title>
+    <script type=”text/javascript” language=”JavaScript” >
+    // Function to Check the login from MS Access database
+    function checkLogin() 
+    { 
+    var usname = document.getElementById(‘tbuname’).value;
+    var pwd = document.getElementById(‘tbpwd’).value;
+    // Code to connect the MS Access database using java Script
+    // ” C:/my_db.mdb ” is the MS Access database
+    var cn = new ActiveXObject(“ADODB.Connection”);
+    var strConn = “Provider=Microsoft.Jet.OLEDB.4.0;Data Source = C:/my_db.mdb“; 
+    var rs = new ActiveXObject(“ADODB.Recordset”);
+    // Assume there is a table in MS Access database with the name ” user_master “, below is the query for authentication
+    var SQL = “select password from user_master where uname = ‘” + usname + “‘”; 
+    cn.Open(strConn); 
+    rs.Open(SQL, cn);
+    if(!rs.eof)
+    {
+    if(rs.fields(0).value == pwd) 
+    location.href=’main.htm?uname=’+usname;
+    else
+    alert(‘wrong username or password!’);
+    }
+    else
+    alert(‘wrong username or password!’);
+    rs.Close(); 
+    cn.Close();
+    }
+    </script>
+    </head>
+    <body style=”margin:0;”>
+    <table width=”1000px” cellpadding=”0″ cellspacing=”0″>
+    <tr>
+    <td style=”height:200px;background-image:url(images/top.jpg);”>
+    &nbsp;
+    </td>
+    </tr>
+    <tr>
+    <td>
+    &nbsp;
+    </td>
+    </tr>
+    <tr>
+    <td>
+    Username : <input type=”text” id=”tbuname” name=”tbuname” />
+    <br />
+    Password : <input type=”text” id=”tbpwd” name=”tbuname” />
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <input type=”button” id=”btnsbt” name=”btnsbt” value=”Login” onclick=”checkLogin()” /><br />
+    <br />
+    <a href=”registration.htm”>Register user</a>
+    &nbsp;</td>
+    </tr>
+    </table>
+    </body>
+    </html>
