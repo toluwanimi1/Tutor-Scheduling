@@ -16,69 +16,74 @@ import java.time.format.DateTimeFormatter;
 
 public class Tutor {
     
+    //variables
     private String Name;
     private String userName;
-    private String password;
+    private String userPassword;
     private String studentID;
     
     private double hours;
     
+    //constructors
     
-    public Tutor(String nm)
+    public Tutor(String name)
     {
-        Name = nm;
-    }        
+        Name = name;
+    }  
     
-    public Tutor(String nm, String un, String pd, String si)
+        
+    public Tutor(String name, String username, String password, String studentid)
     {
         
-        Name = nm;
-        userName = un;
-        password = pd;
-        studentID = si;
+        Name = name;
+        userName = username;
+        userPassword = password;
+        studentID = studentid;
         
-    }        
+    } 
     
-    public void setHours(double h[][])
-    {
+    //methods             
+    
+    public void setHours(double matrix[][])                                                         //jarrod holley 
+    {                                                                                               //needs exceptions 
      
-        Scanner input = new Scanner(System.in);
-        LocalDateTime myTime = LocalDateTime.now();     // Create a date object
-        DateTimeFormatter formatTime = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
+        Scanner input = new Scanner(System.in);                                                     // needs logical hours of the day 
+        LocalDateTime myTime = LocalDateTime.now();                                                 // Create a date object
+        DateTimeFormatter formatTime = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");          // Format the date easier to read
         
-        String finalTime = myTime.format(formatTime);
+        String finalTime = myTime.format(formatTime);                                               //Use the set time and run format method
         System.out.println(finalTime);
         
         
-        for(int row = 0; row < h.length; row++)
+        for(int row = 0; row < matrix.length; row++)                                                //row major 
         {
         
-            for(int col = 0; col < h[0].length; col++)
+            for(int col = 0; col < matrix[0].length; col++)                                         //column major
             {
-                if(col == 0)                      //monday
+                if(col == 0)                                                         //monday
                 {
                     System.out.println("Enter Hours for Monday: ");
-                    h[row][col] = input.nextDouble();
+                    matrix[row][col] = input.nextDouble();
                 }    
-                else if(col == 1)                 //tuesday
+                else if(col == 1)                                                   //tuesday
                 {
                     System.out.println("Enter Hours for Tuesday ");
-                    h[row][col] = input.nextDouble();
+                    matrix[row][col] = input.nextDouble();
                 }
-                else if(col == 2)                 //wednesday
+                else if(col == 2)                                                   //wednesday
                 {
                     System.out.println("Enter Hours for Wednesday: ");
-                    h[row][col] = input.nextDouble();
+                    matrix[row][col] = input.nextDouble();
                 }    
-                else if(col == 3)                 //thursday
+                else if(col == 3)                                                   //thursday
                 {
                    System.out.println("Enter Hours for Thursday: ");
-                   h[row][col] = input.nextDouble();
+                   matrix[row][col] = input.nextDouble();
                 }    
-                else if(col == 4)                 //friday
+                else if(col == 4)                                                   //friday
                 {
                     System.out.println("Enter Hours for Friday: ");
-                    h[row][col] = input.nextDouble();
+                    matrix[row][col] = input.nextDouble();
                 }    
                 else
                 {
@@ -91,21 +96,21 @@ public class Tutor {
         
     }        
     
-    public void getHours(String d[], double h[][])
+    public void printHours(String days[], double matrix[][])
     {
         for(int length = 0; length < 5; length++)
         {
-            System.out.print(d[length] + " ");
+            System.out.print(days[length] + " ");
         }    
         
         System.out.println();
         
-        for(int row = 0; row < h.length; row++)
+        for(int row = 0; row < matrix.length; row++)
         {
         
-            for(int col = 0; col < h[0].length; col++)
+            for(int col = 0; col < matrix[0].length; col++)
             {
-                System.out.print(h[row][col] + " ");  
+                System.out.print(matrix[row][col] + " ");  
             }    
         
         }

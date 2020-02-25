@@ -17,22 +17,22 @@ public class DevOps {
      */
     public static void main(String[] args) {
         
-        int row = 1;
-        int col = 5;
+        int row = 1;                                                                //set for one week
+        int col = 5;                                                                //set for five days
         
         Tutor t1 = new Tutor("jarrod", "holleyj0831", "password", "02");
-        String[] Days = new String[col];
-        double[][] hoursLog = new double[row][col];
+        String[] Days = new String[col];                                            //hold the days of the week 
+        double[][] hoursLog = new double[row][col];                                 //hold hours for the days of the week 
         
-        Days[0] = "Monday";
+        Days[0] = "Monday";                                                         //assign the days starting with monday
         Days[1] = "Tuesday";
         Days[2] = "Wednesday";
         Days[3] = "Thursday";
-        Days[4] = "Friday";
+        Days[4] = "Friday";                                                         //last day friday tutoring center closes
                 
         
-        t1.setHours(hoursLog);
-        t1.getHours(Days, hoursLog);
+        t1.setHours(hoursLog);                                                      //allows tutor object to set their hours within matrix
+        t1.printHours(Days, hoursLog);                                                //print the hours 
 
         
         
