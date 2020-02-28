@@ -10,7 +10,7 @@
                         echo '<p class="login-status">You are logged out!</p>';
                     }
                     else {
-                        echo '<p class="login-status">You are loggeed in!</p>';
+                        echo '<p class="login-status">You are logged in!</p>';
                     } 
                 ?>
             </section>
