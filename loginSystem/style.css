@@ -1,0 +1,97 @@
+body {
+    background: #000000;
+    color: #444;
+  }
+  login1
+  {
+    color: #ffffff;
+  }
+  label{
+    color:#000000;
+  }
+  h1.title{
+    font-size:50px;
+    color:#ffffff;
+  font-family: 'Kanit', sans-serif;
+  
+  }
+  h1.Tutees
+  {
+    font-size:50px;
+    color:#ffffff;
+  }
+  h1.Tutors
+  {
+    font-size:50px;
+    color:#ffffff;
+  }
+  button{
+    background-color:#fcdf03;
+    border-color:#ffffff;
+    border-width:5px;
+    width:150px;
+    height:100px;
+  }
+  {box-sizing: border-box}
+  body {font-family: Arial, Helvetica, sans-serif;}
+  
+  .navbar {
+    width: 100%;
+    background-color: #fcdf03;
+    overflow: auto;
+  }
+  
+  
+  .navbar a {
+    float: left;
+    padding: 12px;
+    color:black;
+    text-decoration: none;
+    font-size: 17px;
+    width: 20%; /* Four links of equal widths */
+    text-align: center;
+  }
+  /* hover color from yellow to white*/
+  .navbar a:hover {
+    background-color: #ffffff;
+  }
+  
+  .navbar a.active {
+    background-color: #;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+  buttonh{
+    background-color:#fcdf03;
+    
+    border-width:10px;
+    width:200px;
+    height:150px;
+  }
+  a{
+    color:#000000;
+    font-size:20px;
+    text-decoration:none;
+  }
+  hr{
+     border: 3px solid white;
+    border-radius: 5px;
+  }
+  th{
+    background-color:#fcdf03;
+    color:black;
+    width:30px;
+  }
+  
+  
+  img{
+    width:400px;
+    height:250
+  }
