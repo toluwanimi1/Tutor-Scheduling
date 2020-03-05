@@ -3,9 +3,11 @@
    <title>HYD</title>
   <head>
     
-     <link href="style.css" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css" />
 <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
 
+  <header id="header">
     <center>
       <hr>
       <hr>
@@ -28,17 +30,88 @@
   <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/00/Bowie_State_Bulldogs_logo.svg/1200px-Bowie_State_Bulldogs_logo.svg.png" style="width:480px;height:320px;">
         </img>
         <!-- Navigation bar-->
-<div class="navbar">
+<div id="navbar">
   <b>
   <a class="active" href="index.html">Home</a> 
-  <a href="Tutor.html">Tutors</a> 
-  <a href="Tutees.html">Tutees</a> 
-  <a href="Login.html">Login</a>
+  <a href="#schedule">Tutor Schedule</a> 
+  <a href="#register">Register</a> 
+  <a href="#login">Login</a>
   </b>
 </div>
+</header>
+</section>
+<!--==========================
+     Tutor Scedule Section
+    ============================-->
+    <hr>
+    
+ <section id="schedule">
+ 
+   <center>
+<p class="quote"> "Education is our passport to the future, for tomorrow belongs to the people who prepare for it today." –Malcolm X</p>
 
+<div class="background">
+<h1 class="title2">Tutor Schedule</h1>
   
+<br>
+   </section>
+   </div>
 
+   <hr>
+  <!--==========================
+    Register Section
+    ============================-->
+
+ <section id="register">
+   <center>
+   <h1 class="title">Register Now</h1>
+   <form class="form-register" action="includes/register.inc.php" method="post">
+                    <input type="text" name="uid" placeholder="Username">
+                    <br>
+                    <input type="text" name="email" placeholder="E-Mail">
+                    <br>
+                    <input type="text" name="sid" placeholder="Student ID">
+                    <br>
+                    <input type="password" name="pwd" placeholder="Password">
+                    <br>
+                    <input type="password" name="pwd-repeat" placeholder="Repeat Password">
+                    <br>
+                    <button type="register" name="register-submit">Register</button>
+                </form>
+   <br>
+<br>
+<br>
+<br>
+   </section>
+   
+
+   <hr>
+ <!--==========================
+    Login Section
+    ============================-->
+<section id="login">
+  <center>
+  <h1 class="title">Login</h1>
+  <div>
+    <form class="Login">
+  <label for="sid"></label><br>
+  <input type="text" id="sid" name="sid" placeholder="Student ID"><br>
+  <label for="pass"></label><br>
+  <input type="text" id="pass" name="pass" placeholder="Password">
+  <br>
+  <button type="Login" name="Login-submit">Login</button>
+  </div>
+  <br>
+<br>
+<br>
+<br>
+   </section>
+   <hr>
+  
+    <!--==========================
+    Login Section
+    ============================-->
+    <section id="about">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
    
@@ -48,6 +121,7 @@
   <body>
     <center>
     <script src="script.js"></script>
-    
+    <h1></h1>
   </body>
+
 </html>
