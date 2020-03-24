@@ -1,0 +1,367 @@
+body {
+  background: #000000;
+  color: #444;
+ 
+}
+login1
+{
+  color: #ffffff;
+}
+label{
+  color:#000000;
+}
+h1.title{
+  font-size:50px;
+  color:#ffffff;
+font-family: 'Kanit', sans-serif;
+
+}
+p.quote{
+    font-size:30px;
+  color:#ffffff;
+font-family: 'Lobster', cursive;
+
+}
+h1.break{
+  font-size:25px;
+  background-color:#000000;
+color:#ffffff;
+font-family: 'Kanit', sans-serif;
+
+}
+h1.title2{
+  font-size:40px;
+  background-color:#fcdf03;
+color:#000000;
+font-family: 'Kanit', sans-serif;
+
+}
+h1.footer{
+  font-size:40px;
+  background-color:#fcdf03;
+color:#fcdf03;
+font-family: 'Kanit', sans-serif;
+
+}
+h2{
+  font-size:25px;
+  color:#ffffff;
+}
+div.background{
+  background-color:#ffffff;
+}
+div.background2{
+  background-color:#84857e;
+}
+p.mission{
+  font-size:25px;
+  color:#ffffff;
+
+}
+h1.Tutees
+{
+  font-size:50px;
+  color:#ffffff;
+}
+h1.Tutors
+{
+  font-size:50px;
+  color:#ffffff;
+}
+html
+{
+  scroll-behavior: smooth;
+}
+a{
+  color:#000000;
+  text-decoration:none;
+}
+
+button{
+  background-color:#fcdf03;
+  border-color:#ffffff;
+  border-width:2px;
+  width:20%;
+  height:50px;
+  text-decoration:none;
+  font-size:20px;
+  font:bold;
+}
+button.math{
+  background-color:#eb4034;
+  width:200px;
+  height:130px;
+  font-size:30px;
+  cursor:pointer;
+
+}
+button.ct{
+  background-color:#16f2f2;
+  width:200px;
+  height:130px;
+  font-size:30px;
+  cursor:pointer;
+}
+button.cj{
+  background-color:#16f216;
+  width:200px;
+  height:130px;
+  font-size:30px;
+  cursor:pointer;
+}
+button.sm{
+  background-color:#ff9a03;
+  width:200px;
+  height:130px;
+  font-size:30px;
+  cursor:pointer;
+}
+button.chem{
+  background-color:#0048ff;
+  width:200px;
+  height:130px;
+  font-size:30px;
+  cursor:pointer;
+}
+
+button.bio{
+  background-color:#b416f2;
+  width:200px;
+  height:130px;
+  font-size:30px;
+  cursor:pointer;
+}
+button.his{
+  background-color:#ff00d4;
+  width:200px;
+  height:130px;
+  font-size:30px;
+  cursor:pointer;
+}
+button.psy{
+  background-color:#00ff88;
+  width:200px;
+  height:130px;
+  font-size:30px;
+  cursor:pointer;
+}
+button.nur{
+  background-color:#ff5100;
+  width:200px;
+  height:130px;
+  font-size:30px;
+  cursor:pointer;
+}
+button.edu{
+  background-color:#eeff00;
+  width:200px;
+  height:130px;
+  font-size:30px;
+  cursor:pointer;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  
+  }
+/*navbar css */
+#navbar {
+  width: 100%; /* fills out bar across page*/
+  background-color: #fcdf03;
+  overflow: auto;
+}
+
+
+#navbar a {
+  float: left;
+  padding: 12px;
+  color:black;
+  text-decoration: none;
+  font-size: 17px;
+  width: 20%; /* Four links of equal widths */
+  text-align: center;
+}
+
+/* hover color from yellow to white*/
+#navbar a:hover {
+  background-color: #ffffff;
+}
+//16px of space
+.content {
+  padding: 16px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .content {
+  padding-top: 60px;
+}
+// same css but
+#navbar2 {
+  width: 100%;
+  background-color: #fcdf03;
+  overflow: auto;
+}
+
+//Navbar2 is same as navbar but for the register page
+#navbar2 a {
+  float: left;
+  padding: 12px;
+  color:black;
+  text-decoration: none;
+  font-size: 17px;
+  width: 98%; /* Four links of equal widths */
+  text-align: center;
+}
+
+/* hover color from yellow to white*/
+#navbar2 a:hover {
+  background-color: #ffffff;
+} 
+.navbar a.active {
+
+}
+
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+  .navbar2 a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+
+buttonh{
+  background-color:#fcdf03;
+  
+  border-width:10px;
+  width:50px;
+  height:50px;
+}
+button{
+  background-color:#fcdf03;
+  
+  border-width:5px;
+  width:50px;
+  height:150px;
+}
+button.register{
+
+}
+
+table{
+  width:50%;
+}
+th{
+  color:black;
+  width:30px;
+}
+table#Ctec
+{
+  width:50%
+}
+hr{
+    border: 0;
+    width: 96%;
+    color: #FFFF00;
+    height: 1px;
+}
+img{
+  width:400px;
+  height:250
+}
+
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+tr{
+  width:50%;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div.form {
+  border-radius: 5px;
+  
+  padding: 20px;
+}
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
