@@ -1,4 +1,5 @@
-# DevOps
-Devops Repository
+# Tutor-Scheduling
+There are 2 version of the website the shell in the link below that's not connect
+and database site that is able to run of a raspberry pi
 
 https://rb.gy/oecylv
